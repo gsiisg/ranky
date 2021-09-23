@@ -44,7 +44,7 @@ The rank aggregation methods available include:
 
 * Random Dictator: `rk.dictator(m)`
 * Score Voting (mean): `rk.score(m)`
-* Borda Count (average rank): `rk.borda(m)`
+* Borda Count (average rank): `rk.borda(m) (lower result is better ranked for this function)`
 * Majority Judgement (median): `rk.majority(m)`
 * Pairwise methods. Copeland's method: `rk.pairwise(m)`, Success rate: `rk.pairwise(m, wins=rk.success_rate)` and more. You can specify your own "wins" function or select one from the `rk.duel` module.
 * **Optimal rank aggregation** using any rank metric: `rk.center(m)`, `rk.center(m, method='kendalltau')`. Solver used \[1\].
